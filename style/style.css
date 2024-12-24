@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    background: #fafafa;
+}
+
+.container-purple {
+    background: rgb(136,56,240);
+    background: linear-gradient(0deg, rgba(136,56,240,1) 20%, rgba(233,66,240,1) 100%);
+    width: 25%;
+    height: 90%;
+    min-height: 860px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-booking {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-booking {
+    width: 41.5%;
+    height: auto;
+    border: 1px solid #000;
+}
+
+.description-booking h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 46px;
+    font-weight: 600;
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.description-booking p {
+    color: hsl(270, 7%, 64%);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+}
