@@ -20,9 +20,9 @@ body {
 .container-purple {
     background: rgb(136,56,240);
     background: linear-gradient(0deg, rgba(136,56,240,1) 20%, rgba(233,66,240,1) 100%);
-    width: 25%;
+    width: 30%;
     height: 90%;
-    min-height: 860px;
+    min-height: 880px;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 180px;
     display: flex;
@@ -31,8 +31,314 @@ body {
     position: relative;
 }
 
+/* Móvile */
+.movile {
+    width: 25%;
+    min-width: 350px;
+    height: auto;
+    padding: 10px;
+    border: 8px solid #fff;
+    position: absolute;
+    top: 2%;
+    left: 80%;
+    border-radius: 30px;
+    transition: .6s ease;
+    background: #fafafa;
+    box-shadow: 5px 5px 20px #d1d1d1;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px 20px 10px 10px;
+    background: linear-gradient(90deg, rgba(136,56,240,1) 0%, rgba(233,66,240,1) 100%);
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 70px;
+    width: 200px;
+    height: 27px;
+    background-color: #fff;
+    border-radius: 0px 0px 16px 16px;
+}
+
+.description-header {
+    gap: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.description-header box-icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 25px;
+}
+
+.description-header img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.names {
+    width: auto;
+    height: auto;
+    display: flex;
+    line-height: 1.4;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.names h2 {
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.names p {
+    color: hsl(206, 6%, 79%);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.header box-icon {
+    position: relative;
+    top: 14px;
+}
+
+/* Container-chat */
+.container-chat {
+    width: 100%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+     background-color: rgba(0, 0, 0, 0.08);
+}
+
+.container-message {
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.message-1 {
+    width: 235px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.message-1 p {
+    color: hsl(264, 100%, 61%);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: start;
+    line-height: 1.6;
+}
+
+.container-photos {
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.photos {
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.photos img {
+    width: 72px;
+    padding: 5px 7px;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+.message-2 {
+    width: 220px;
+    height: auto;
+    padding: 10px;
+    align-items: flex-end;
+    margin-left: 79px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8);
+    background-color: hsl(270, 20%, 96%);
+}
+
+.message-2 p {
+    color: hsl(271, 36%, 24%);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.container-audios {
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+
+.message-3 {
+    width: 215px;
+    height: auto;
+    padding: 10px;
+    align-items: flex-end;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8);
+    background-color: hsl(270, 20%, 96%);
+}
+
+.message-3 p {
+    color: hsl(271, 36%, 24%);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.audio {
+    width: 260px;
+    height: 55px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    transition: .6s ease-in-out;
+    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.audio:hover {
+    transform: translateX(15px);
+}
+
+.text-audio {
+    gap: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.circle {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.text-audio p {
+    color: hsl(270, 20%, 96%);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+}
+
+.price {
+    width: auto;
+    height: auto;
+}
+
+.price p {
+    color: hsl(270, 20%, 96%);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.input { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.input input {
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    color: hsl(271, 36%, 24%);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: start;
+    padding: 13px 20px;
+    transition: .6s ease;
+    background-color: hsl(270, 20%, 96%);
+}
+
+::placeholder {
+    color: hsl(206, 6%, 79%);
+}
+
+.input input:focus {
+    outline: none;
+    border: 1px solid hsl(264, 100%, 61%);
+}
+
+.circle-input {
+    width: 32px;
+    height: 32px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 87%;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: hsl(271, 36%, 24%);
+    transition: .6s ease-in-out;
+}
+
+.circle-input box-icon {
+    font-weight: 600;
+}
+
+.circle-input:hover {
+    transform: translateX(5px);
+}
+
 .container-booking {
-    width: 85%;
+    width: 70%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -40,9 +346,8 @@ body {
 }
 
 .description-booking {
-    width: 41.5%;
+    width: 46%;
     height: auto;
-    border: 1px solid #000;
 }
 
 .description-booking h1 {
