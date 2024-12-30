@@ -364,3 +364,86 @@ body {
     font-weight: 500;
     text-align: start;
 }
+
+/* Estilos Responsive */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-purple {
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .movile {
+        width: 90%;
+        left: 5%;
+        top: 5%;
+        min-width: auto;
+    }
+
+    .container-booking {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .description-booking h1 {
+        font-size: 36px;
+    }
+
+    .description-booking p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container-purple {
+        width: 100%;
+        height: auto;
+    }
+
+    .movile {
+        width: 80%;
+        left: 10%;
+        min-width: auto;
+    }
+
+    .container-booking {
+        width: 80%;
+        text-align: center;
+    }
+
+    .description-booking h1 {
+        font-size: 40px;
+    }
+
+    .description-booking p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .container-purple {
+        width: 40%;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+
+    .movile {
+        width: 30%;
+        left: 70%;
+    }
+
+    .container-booking {
+        width: 60%;
+    }
+}
